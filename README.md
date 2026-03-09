@@ -71,18 +71,6 @@ Open `http://localhost:5173` in your browser.
 
 ---
 
-## 🌐 Deployment (Vercel)
-
-This project is fully configured for deployment on **Vercel**.
-
-1. Create a GitHub repository and push this code.
-2. Go to [Vercel](https://vercel.com/) and click **Add New... > Project**.
-3. Import your GitHub repository (`sivarammarpu/AI-Study-Intelligence-Platform`).
-4. In the Vercel **Environment Variables** section, add your `VITE_SAMBANOVA_API_KEY` (and Firebase keys if you are using Firebase).
-5. Click **Deploy**. Vercel will handle the Vite build process automatically using the `vercel.json` routing rules.
-
----
-
 ## 🔐 Security & Data Privacy
 
 *   **API Keys:** Environment variables ensure that AI models and Firebase keys are not exposed in the source control.
