@@ -65,9 +65,6 @@ export default function LandingPage() {
         textAlign: 'center', position: 'relative', zIndex: 1,
         maxWidth: 900, margin: '0 auto', padding: '10rem 2rem 6rem',
       }}>
-        <div className="badge badge-purple" style={{ marginBottom: '1.5rem', display: 'inline-flex' }}>
-          <Zap size={12} /> Powered by Google Gemini AI
-        </div>
         <h1 style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif",
           fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
