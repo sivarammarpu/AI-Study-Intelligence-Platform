@@ -18,17 +18,33 @@ const pageTitles = {
 
 export const AppLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
   const title = pageTitles[location.pathname] || 'StudyAI';
 
   return (
     <div className="layout">
-      <Sidebar collapsed={collapsed} onToggle={() => setCollapsed(c => !c)} />
-      <main
-        className="main-content"
-        style={{ marginLeft: collapsed ? '70px' : '260px', transition: 'margin-left 0.3s ease' }}
-      >
-        <Navbar onMenuToggle={() => setCollapsed(c => !c)} title={title} />
+      {/* Mobile overlay */}
+      {mobileOpen && (
+        <div 
+          style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.6)', zIndex: 45, backdropFilter: 'blur(4px)' }}
+          onClick={() => setMobileOpen(false)}
+        />
+      )}
+      <Sidebar 
+        collapsed={collapsed} 
+        mobileOpen={mobileOpen}
+        onToggle={() => setCollapsed(c => !c)} 
+        closeMobile={() => setMobileOpen(false)}
+      />
+      <main className={`main-content ${collapsed ? 'collapsed' : ''}`}>
+        <Navbar 
+          onMenuToggle={() => {
+            if (window.innerWidth <= 768) setMobileOpen(true);
+            else setCollapsed(c => !c);
+          }} 
+          title={title} 
+        />
         <div className="page-content">
           <Outlet />
         </div>

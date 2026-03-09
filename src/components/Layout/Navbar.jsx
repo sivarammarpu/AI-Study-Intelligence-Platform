@@ -32,8 +32,8 @@ export const Navbar = ({ onMenuToggle, title }) => {
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         {/* Demo Mode badge */}
         {isDemoMode() && (
-          <div style={{
-            display: 'flex', alignItems: 'center', gap: '0.35rem',
+          <div className="hidden sm:flex" style={{
+            alignItems: 'center', gap: '0.35rem',
             padding: '0.25rem 0.75rem', borderRadius: 100,
             background: 'rgba(245, 158, 11, 0.12)',
             border: '1px solid rgba(245, 158, 11, 0.3)',
@@ -44,7 +44,7 @@ export const Navbar = ({ onMenuToggle, title }) => {
         )}
 
         {/* Focus indicator */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+        <div className="hidden sm:flex" style={{ alignItems: 'center', gap: '0.4rem' }}>
           <div style={{
             width: 8, height: 8, borderRadius: '50%',
             background: focus.color,
@@ -56,7 +56,7 @@ export const Navbar = ({ onMenuToggle, title }) => {
         </div>
 
         {/* XP Badge */}
-        <div className="badge badge-purple">
+        <div className="badge badge-purple hidden sm:inline-flex">
           <span>⚡</span>
           <span>{xp} XP · Lv.{level}</span>
         </div>

@@ -21,7 +21,7 @@ const navItems = [
   { to: '/profile', icon: User, label: 'Profile' },
 ];
 
-export const Sidebar = ({ collapsed, onToggle }) => {
+export const Sidebar = ({ collapsed, mobileOpen, onToggle, closeMobile }) => {
   const { currentUser, logout } = useAuth();
   const { xp, level, xpInLevel, xpToNextLevel, streak } = useStudy();
   const navigate = useNavigate();
@@ -32,14 +32,7 @@ export const Sidebar = ({ collapsed, onToggle }) => {
   };
 
   return (
-    <aside
-      className="sidebar"
-      style={{
-        width: collapsed ? '70px' : '260px',
-        overflowX: 'hidden',
-        transition: 'width 0.3s ease',
-      }}
-    >
+    <aside className={`sidebar ${collapsed ? 'sidebar-collapsed' : ''} ${mobileOpen ? 'mobile-open' : ''}`}>
       {/* Logo */}
       <div style={{
         padding: collapsed ? '0 1rem' : '0 1.5rem',
