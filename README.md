@@ -8,27 +8,27 @@ StudyAI is a next-generation, AI-powered learning intelligence platform designed
 
 ## 🌟 Key Features
 
-*   **🧠 AI Topic Summaries:** Get instant, structured, and comprehensive summaries of any educational topic powered by Meta Llama 3.3.
-*   **❓ Smart Quiz Generator:** Automatically generate Multiple Choice, True/False, and Short-Answer quizzes tailored to your learning needs.
-*   **🃏 Flashcard System:** AI-generated flashcards with built-in SM2 spaced-repetition scheduling for long-term retention.
-*   **📄 PDF Learning:** Upload PDF documents, lecture notes, or slides and instantly extract structured study notes and quizzes.
-*   **🎬 YouTube Learning:** Turn any educational YouTube video into structured study materials purely from the video link.
-*   **📊 Learning Analytics:** Track your learning streak, XP, knowledge retention levels, and focus time natively.
-*   **🗺️ Curriculum Builder:** Generate personalized, step-by-step learning roadmaps and syllabus structures.
-*   **📝 Exam Simulator:** Take timed, AI-generated exams and get detailed readiness scores and explanations.
-*   **🛡️ Demo Mode / Offline Mode:** Fully functional using `localStorage` if Firebase backend is not configured.
+* **🧠 AI Topic Summaries:** Get instant, structured, and comprehensive summaries of any educational topic powered by Meta Llama 3.3.
+* **❓ Smart Quiz Generator:** Automatically generate Multiple Choice, True/False, and Short-Answer quizzes tailored to your learning needs.
+* **🃏 Flashcard System:** AI-generated flashcards with built-in SM2 spaced-repetition scheduling for long-term retention.
+* **📄 PDF Learning:** Upload PDF documents, lecture notes, or slides and instantly extract structured study notes and quizzes.
+* **🎬 YouTube Learning:** Turn any educational YouTube video into structured study materials purely from the video link.
+* **📊 Learning Analytics:** Track your learning streak, XP, knowledge retention levels, and focus time natively.
+* **🗺️ Curriculum Builder:** Generate personalized, step-by-step learning roadmaps and syllabus structures.
+* **📝 Exam Simulator:** Take timed, AI-generated exams and get detailed readiness scores and explanations.
+* **🛡️ Demo Mode / Offline Mode:** Fully functional using `localStorage` if Firebase backend is not configured.
 
 ---
 
 ## 🛠️ Tech Stack
 
-*   **Frontend Framework:** React 18, Vite
-*   **Routing:** React Router v6
-*   **Styling:** Tailwind CSS, Lucide React (Icons)
-*   **State Management:** React Context API
-*   **Backend & Auth:** Firebase (Authentication, Firestore Database, Storage)
-*   **AI Integration:** SambaNova API (OpenAI Compatible) / Meta-Llama-3.3-70B-Instruct
-*   **Utilities:** Recharts, pdfjs-dist, date-fns
+* **Frontend Framework:** React 18, Vite
+* **Routing:** React Router v6
+* **Styling:** Tailwind CSS, Lucide React (Icons)
+* **State Management:** React Context API
+* **Backend & Auth:** Firebase (Authentication, Firestore Database, Storage)
+* **AI Integration:** SambaNova API (OpenAI Compatible) / Meta-Llama-3.3-70B-Instruct
+* **Utilities:** Recharts, pdfjs-dist, date-fns
 
 ---
 
@@ -37,17 +37,20 @@ StudyAI is a next-generation, AI-powered learning intelligence platform designed
 To run StudyAI locally:
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/sivarammarpu/AI-Study-Intelligence-Platform.git
 cd AI-Study-Intelligence-Platform
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Environment Variables
+
 Create a `.env` file in the root directory and add your API keys:
 
 ```env
@@ -64,18 +67,20 @@ VITE_FIREBASE_APP_ID=your_firebase_app_id
 ```
 
 ### 4. Run Development Server
+
 ```bash
 npm run dev
 ```
+
 Open `http://localhost:5173` in your browser.
 
 ---
 
 ## 🔐 Security & Data Privacy
 
-*   **API Keys:** Environment variables ensure that AI models and Firebase keys are not exposed in the source control.
-*   **Database Security:** Includes strict `firestore.rules` that restrict users to reading and writing solely their own personal study materials based on Authentication UID.
-*   **HTTP Security headers:** Enforces Strict-Transport-Security, Content-Security-Policy (CSP), and anti-clickjacking measures.
+* **API Keys:** Environment variables ensure that AI models and Firebase keys are not exposed in the source control.
+* **Database Security:** Includes strict `firestore.rules` that restrict users to reading and writing solely their own personal study materials based on Authentication UID.
+* **HTTP Security headers:** Enforces Strict-Transport-Security, Content-Security-Policy (CSP), and anti-clickjacking measures.
 
 ---
 
