@@ -1,6 +1,6 @@
 # StudyAI – AI Learning Intelligence Platform
 
-![StudyAI Preview](public/preview.png)
+![[Study AI Preview](https://study-r39ffp4zz-sivaram-marpus-projects.vercel.app/study)](public/preview.png)
 
 StudyAI is a next-generation, AI-powered learning intelligence platform designed to help students learn 10x faster. It leverages advanced Large Language Models (LLMs) to automatically generate structured topic summaries, interactive quizzes, spaced-repetition flashcards, and personalized learning curriculums from any given topic, PDF document, or YouTube video.
 
